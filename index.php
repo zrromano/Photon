@@ -1,2 +1,2 @@
 <?php
-  echo "First big boi":
+  echo "First big boi";
