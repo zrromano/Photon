@@ -1,3 +1,2 @@
 <?php
-  echo "First big boi";
-  echo "/n ethn is lame";
+  echo "First, big boi.";
