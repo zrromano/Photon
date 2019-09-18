@@ -1,0 +1,70 @@
+<head>
+	<title>League of Legends Resources</title>
+	<meta charset='utf-8' name='viewport' content='width=device-width initial-scale=1'>
+	<link rel='stylesheet' type='text/css' href='gameResStyle.css'>
+</head>
+<script src='js/jquery-3.3.1.js'></script>
+<script src='js/gameResCode.js'></script>
+<script src='js/slayerCalc.js'></script>
+<body>
+	<div id='header'>
+		<img id='logo' src='Logo.svg' width='150px' height='150px'>
+	</div>
+	<div id='navBar'>
+		<a id='homeButton' class='navButton' href="gameRes.html?home">Home</a>
+		<a id='gamesButton'class='navButton' href="gameRes.html?games">Games</a>
+        <a id='aboutButton'class='navButton' href="gameRes.html?about">About</a>
+	</div>
+	<div class='content'>
+		<h1 class='align-center'>Runescape Slayer Point Calculator</h1>
+	<table class='center'>
+	   <tr>
+		   <td class='align-right'>
+		Points needed:
+		   </td>
+		   <td>
+        <input type='text' name='points' id='points'>
+		   </td>
+       </tr>
+       <tr>
+		   <td class='align-right'>
+        Current task streak:
+		   </td>
+		   <td>
+        <input type='text' name='streak' id='streak'>
+           </td>
+       </tr>
+       <tr>
+		   <td>
+        Slayer master:
+		   </td>
+		   <td>
+		<br>
+        <input type='radio' id='Mazchna' name='master' value=2>Mazchna/Achtryn
+        <br>
+        <input type='radio' id='Vannaka' name='master' value=4>Vannaka
+        <br>
+        <input type='radio' id='Chaeldar' name='master' value=10>Chaeldar
+        <br>
+        <input type='radio' id='Sumona' name='master' value=12>Sumona
+        <br>
+        <input type='radio' id='Duradel' name='master' value=15>Duradel/Lapolak
+        <br>
+        <input type='radio' id='Kuradel' name='master' value=18>Kuradel
+        <br>
+        <input type='radio' id='Morvran' name='master' value=20>Morvran
+        <br>
+        <br>
+        </tr>
+        <tr>
+			<td>
+        <button type='button' onclick="runescapeSlayerCalc();">Calculate</button>
+			</td>
+           </td>
+		   <td class='align-right'>
+        <input type='text' disabled='disabled' name='output' id='output'>
+		   </td>
+       </tr>
+    </table
+	</div>
+</body>

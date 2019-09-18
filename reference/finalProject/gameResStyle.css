@@ -1,0 +1,143 @@
+body{
+	margin:0;
+	padding:0;
+	background:red;
+	font-size:1.1em;
+}
+#header{
+	background-color: black;
+	margin:0;
+	padding:0;
+    text-align:center;
+}
+
+#navBar{
+    min-width:100vw;
+    position:relative;
+	background-color:black;
+}
+#navBar a{
+	background-color:black;
+    font-weight:bold;
+	width:10vw;
+    height:30px;
+	border:1px none white;
+	border-right-style:solid;
+	display:inline-block;
+	color:white;
+	text-align:center;
+
+	text-decoration:none;
+}
+#navBar a.active{
+	color:red;
+}
+#navBar a:hover{
+	background-color:grey;
+	color:black;
+	}
+.content{
+    position:relative;
+    background:white;
+    margin:auto;
+    border-radius:15px;
+    padding: 20px;
+    padding-left:40px;
+    padding-right:40px;
+    width: -moz-calc(95% - 80px);
+    width: -webkit-calc(95% - 80px);
+    width: calc(95% - 80px);
+    min-height: -moz-calc(100% - 220px);
+    min-height: -webkit-calc(100% - 220px);
+    min-height: calc(100% - 220px);;
+}
+.content a:link{
+    text-decoration: none;
+    color:red;
+    font-weight:bold;
+}
+.content a:visited{
+    text-decoration: none;
+    color:darkred;
+}
+.content a:hover:not(.prev):not(.next){
+    text-decoration: underline;
+}
+.content a:active:not(.prev):not(.next){
+    text-decoration: underline;
+    color:darkred;
+}
+.align-center{
+	text-align:center;
+}
+.align-right { 
+	text-align:right;
+}
+.center{
+	margin:auto;
+}
+.changelog{
+    background-color:lightgray;
+    position:absolute;
+    top:395px;
+    left:10px;
+    width:500px;
+    height:45%;
+    overflow-y:scroll;
+    padding:5px;
+}
+.slideshow{
+    position:relative;
+    border:solid black 1px;
+    height:350px;
+    width:80%;
+    max-width:1000px;
+}
+.slideText{
+    position:absolute;
+    width:45%;
+    height:280px;
+    top:55px;
+    right:50%;
+    overflow-y:scroll;
+    margin:0px;
+}
+.slideImage{
+    position:absolute;
+    height:320px;
+    top:15px;
+    width:45%;
+    left:50%;
+}
+.slideTitle{
+    position:absolute;
+    width:45%;
+    right:50%;
+    top:20px;
+    height:20px;
+}
+.next{
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    right:5px;
+}
+.prev{
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    left:5px;
+}
+.gallery{
+    position:absolute;
+    top:395px;
+    left:550px;
+    width:60%;
+}
+
+.gallery img{
+    max-height:300px;
+    max-width:300px;
+    height:auto;
+    width:auto;
+}

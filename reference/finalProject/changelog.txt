@@ -1,0 +1,4 @@
+05/07/18 10:17 Code: Changelog code re-implemented
+05/08/18 12:36 Feature: Changelog fully re-implemented
+05/08/18 13:39 Feature: Webtool slideshow re-implemented
+05/08/18 20:20 Feature: Screenshot gallery re-implemented. Note: CSS and responsiveness of home page could use some work.

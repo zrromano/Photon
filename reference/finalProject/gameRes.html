@@ -1,0 +1,66 @@
+
+<head>
+	<title>Gaming Resources</title>
+	<meta charset='utf-8' name='viewport' content='width=device-width initial-scale=1'>
+	<link rel='stylesheet' type='text/css' href='gameResStyle.css'>
+</head>
+<script src='js/jquery-3.3.1.js'></script>
+<script src='js/gameResCode.js'></script>
+<body onload="startup();">
+	<div id='header'>
+		<img id='logo' src='Logo.svg' width='150px' height='150px'>
+	</div>
+	<div id='navBar'>
+		<a id='homeButton' class='navButton' onclick="openContent('home'); homeHandler();">Home</a>
+		<a id='gamesButton'class='navButton' onclick="openContent('games');">Games</a>
+        <a id='aboutButton'class='navButton' onclick="openContent('about');">About</a>
+	</div>
+    <div id='home' class='content' style='display:none;'>
+        <div class='slideshow center'>
+            <div class='slide'>
+                <h2 class='slideTitle center align-center'>Slayer Calculator</h2>
+                <p class='slideText'>
+                Game: Runescape<br>
+                <a href="slayerCalc.html">Link</a><br>
+                Enter the number of slayer points you want to earn, which slayer master you're using, and your current task streak and this tool will tell you how many slayer tasks you need to complete to reach your goal.<br><br>
+                Unfortunately, the calculator doesn't support chaning slayer masters between tasks and it doesn't factor in the chance of recieving a special assignment. 
+                </p>
+                <img class='slideImage' src="images/slayer.jpg" alt="Image not found"> 
+            </div>
+            <div class='slide' style='display:none;'>
+                <h2 class='slideTitle center align-center'>NPC Generator</h2>
+                <p class='slideText'>
+                Game: Various tabletop RPGs<br>
+                <a href="rpgNPCgen.html">Link</a><br>
+                Generates a basic outline for an RPG character. Stats generated, but are not limited to: Name, race, age, ability scores, appearance, and personality quirks.<br><br>
+                The generator was written with the Pathfinder RPG system in mind, but characters are general enough to easily convert to other systems. The only rules taken specifically from Pathfinder are those for ability scores and aging's effects on them.
+                </p>
+                <img class='slideImage' src="images/characterSheet.jpg" alt="Image not found">
+            </div>
+             <a class='prev' onclick="plusSlides(-1)">&#10094;</a>
+             <a class='next' onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class='changelog'></div>
+        <div class='gallery'>
+            <h2 class='center align-center'>Screenshot Gallery</h2>
+            <img src="images/Stats%20at%201337%20total.png" alt="Image not found">
+            <img src="images/watchin.jpg" alt="Image not found">
+            <img src="images/chickenDinner.jpg" alt="Image not found">
+        </div>
+    </div>
+    <div id='games' class='content' style='display:none;'>
+		<h2>Video Games</h2>
+        <a href='league.html'>League of Legends</a> 
+        <br>
+        <a href='runescape.html'>Runescape</a>
+        <br>
+        <h2>Tabletop Games</h2>
+        <a href='dAndD.html'>RPGs</a>
+        <br>
+    </div>
+    <div id='about' class='content' style='display:none;'>
+        <p>This page is going to be a hub of resources for the games I play. I'm going to primarily cater the page for my personal use
+        , but I'm sure other people that play these games will find it useful. Most links will be external resources, made by other people,
+        but there will be some webtools written by me as well.</p>
+    </div>
+</body>

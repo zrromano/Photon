@@ -1,0 +1,132 @@
+<head>
+	<title>NPC Generator</title>
+	<meta charset='utf-8' name='viewport' content='width=device-width initial-scale=1'>
+	<link rel='stylesheet' type='text/css' href='gameResStyle.css'>
+</head>
+<script src='js/jquery-3.3.1.js'></script>
+<script src='js/gameResCode.js'></script>
+<script src='js/NPCgen.js'></script>
+<body>
+	<div id='header'>
+		<img id='logo' src='Logo.svg' width='150px' height='150px'>
+	</div>
+	<div id='navBar'>
+		<a id='homeButton' class='navButton' href="gameRes.html?home">Home</a>
+		<a id='gamesButton'class='navButton' href="gameRes.html?games">Games</a>
+        <a id='aboutButton'class='navButton' href="gameRes.html?about">About</a>
+	</div>
+	<div class='content'>
+		<table class='center' style="width:70%">
+			<h1 class='align-center'>Random NPC Generator</h1>
+			<h3 class='align-center'>Which traits would you like to generate?</h3>
+			<tr>
+				<td>
+				Name: 
+				</td>
+				<td class='align-right'>
+				<input type='checkbox' id='name'>
+				</td>
+			</tr>
+            <tr>
+				<td>
+				Gender: 
+				</td>
+				<td class='align-right'>
+                <select id='sex' disabled='disabled'>
+                    <option value='random'>Random</option>
+					<option value='Male'>Male</option>
+                    <option value='Female'>Female</option>
+				<input type='checkbox' id='toggleSex'>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				Race: 
+				</td>
+				<td class='align-right'>
+                <select id='race' disabled='disabled'>
+                    <option value='random'>Random</option>
+					<option value='Human'>Human</option>
+                    <option value='Elf'>Elf</option>
+                    <option value='Dwarf'>Dwarf</option>
+                    <option value='Halfling'>Halfling</option>
+				<input type='checkbox' id='toggleRace'>
+				</select>
+				</td>
+			</tr>
+            <tr>
+				<td>
+				Age: <span style="color:lightgray">*</span>
+				</td>
+				<td class='align-right'>
+				<input type='checkbox' id='age'>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				Ability Scores: <span style="color:lightgray">**</span>
+				</td>
+				<td class='align-right'>
+				<input type='checkbox' id='aScores'>
+				</td>
+			</tr>
+            <tr>
+				<td>
+				Inventory and Wealth: 
+				</td>
+				<td class='align-right'>
+                <select id='wealth' disabled='disabled'>
+                    <option value='random'>Random</option>
+					<option value='Poor'>Poor</option>
+                    <option value='Middle Class'>Middle Class</option>
+                    <option value='Rich'>Rich</option>
+				<input type='checkbox' id='toggleWealth'>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				Physical Characteristics: 
+				</td>
+				<td class='align-right'>
+				<input type='checkbox' id='physTraits'>
+				</td>
+			</tr>
+            <tr>
+				<td>
+				Personality Quirks: 
+				</td>
+				<td class='align-right'>
+				<input type='checkbox' id='persTraits'>
+				</td>
+			</tr>
+            <tr>
+				<td>
+				Character History: 
+				</td>
+				<td class='align-right'>
+				<input type='checkbox' id='history'>
+				</td>
+			</tr>
+			<tr>
+				<td colspan='2' class='align-center'>
+				<button type='button' onclick="npcGen();">Generate</button>
+				<br>
+				<br>
+				</td>
+			</tr>
+            <tr>
+                <td colspan='2' style='color:lightgray'>
+                *Ages start at adulthood.<br>
+                **Abilities score randomly generated from 4-18. Aging rules from Pathfinder used.
+                </td>
+            </tr>
+			<tr>
+				<td colspan='2'>
+				<textarea rows='20' style='width:100%' disabled='disabled' id='npcField'></textarea>
+				</td>
+            </tr>
+		</table>
+	</div>
+</body>
