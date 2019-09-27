@@ -8,7 +8,7 @@ if ($_POST["username"] == "hackerman"
     $valid = TRUE;
 }
 
-if($ok){
+if($valid){
   $_SESSION["username"]=$_POST["username"];
   header("Location: ./index.php");
 } else {
