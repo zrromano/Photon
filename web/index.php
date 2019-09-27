@@ -19,3 +19,18 @@
 		<p>Welcome to Loudcloud Photo</p>
 	</div>
 </body>
+
+<?php
+session_start();
+if(array_key_exists("username",$_SESSION)){
+		echo "Welcome, $_SESSION[username]!\n";
+
+}
+//define("ROOT_URL", "localhost");
+
+
+function connect($db,$user,$pass){
+
+}
+
+connect("postgres","postgres","password");
