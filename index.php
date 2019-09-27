@@ -1,2 +1,3 @@
 <?php
-  echo "First, big boi.";
+header("Location: ./web/index.php");
+die();

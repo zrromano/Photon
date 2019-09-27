@@ -1,3 +1,4 @@
+<!doctype html>
 <head>
 	<title>Loudcloud Photo</title>
 	<meta charset='utf-8' name='viewport' content='width=device-width initial-scale=1'>
@@ -15,6 +16,6 @@
 		<a id ='loginButton'class='navButton' href ="login.html?login" onclick="openContent('login');">Login</a>
 	</div>
 	<div id='home' class='content'>
-		<p>Login goes here</p>
+		<p>Welcome to Loudcloud Photo</p>
 	</div>
 </body>
