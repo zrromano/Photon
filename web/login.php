@@ -13,5 +13,5 @@ if($ok){
   header("Location: ./index.php");
 } else {
   session_destroy();
-  header("Location: ../login.html");
+  header("Location: ./login.html");
 }
