@@ -24,8 +24,9 @@
 session_start();
 if(array_key_exists("username",$_SESSION)){
 		echo "Welcome, $_SESSION[username]!\n";
-
+		//echo "Your login using" $_SESSION[password]
 }
+
 //define("ROOT_URL", "localhost");
 
 
