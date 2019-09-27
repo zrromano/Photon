@@ -13,7 +13,7 @@
 		<a id='homeButton' class='navButton' onclick="openContent('home'); homeHandler();">Home</a>
 		<a id='gamesButton'class='navButton' onclick="openContent('games');">Photos</a>
     <a id='aboutButton'class='navButton' onclick="openContent('about');">About</a>
-		<a id ='loginButton'class='navButton' href ="login.html?login" onclick="openContent('login');">Login</a>
+		<a id ='loginButton'class='navButton' href ="login.html" onclick="openContent('login');">Login</a>
 	</div>
 	<div id='home' class='content'>
 		<p>Welcome to Loudcloud Photo</p>
