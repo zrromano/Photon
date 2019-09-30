@@ -1,6 +1,7 @@
 <?php
 $params = parse_ini_file('../database.ini');
 if ($params === false) {
+  echo "params false";
   throw new \Exception("Error reading database config file");
 }
 // connect to the postgresql database
@@ -19,13 +20,12 @@ $conStr = sprintf("pgsql:host=%s;port=%d;dbname=%s;user=%s;password=%s",
 try{
   $pdo = new \PDO($conStr);
   $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-  echo "connection succesful"
-  $sql = "SELECT * FROM public.userinfo"
+  echo "connection succesful";
+  $sql = "SELECT * FROM logins";
   $statement = $pdo->query($sql);
   while ($row = $statement->fetch()){
     echo $row['username'] . $row['password'] . " <br>";}
   }
-  catch(PDOException $e){
-    echo "connection failed <br>" . $e->getMessage();
-  }
+catch(PDOException $e){
+  echo "connection failed <br>" . $e->getMessage();
 }

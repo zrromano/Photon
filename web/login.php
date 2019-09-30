@@ -10,7 +10,7 @@ if ($_POST["username"] == "hackerman"
 
 if($valid){
   $_SESSION["username"]=$_POST["username"];
-  header("Location: databasehome.html");
+  header("Location: database.php");
   //header("Location: ./index.php");
 } else {
   session_destroy();
