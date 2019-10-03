@@ -1,3 +1,10 @@
+<?php
+session_start();
+$greeting = "";
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+	$greeting = "Hello, ".trim($_SESSION["username"])."!";
+}
+?>
 <!doctype html>
 <head>
 	<title>Loudcloud Photo</title>
@@ -11,27 +18,26 @@
   </div>
 	<div id='navBar'>
 		<a id='homeButton' class='navButton' onclick="openContent('home'); homeHandler();">Home</a>
-		<a id='gamesButton'class='navButton' onclick="openContent('games');">Photos</a>
-    <a id='aboutButton'class='navButton' onclick="openContent('about');">About</a>
-		<a id ='loginButton'class='navButton' href ="login.html" onclick="openContent('login');">Login</a>
+		<a id='exploreButton' class='navButton'>Explore</a>
+		<?php
+		if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+			echo("<a id='accountButton' class='navButton' href='reset-password.php'>Account</a>");
+		}
+
+		if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+			echo("	<a id='loginButton' class='navButton' href='login.php'>Login</a>");
+		}
+		?>
+
+		<!todo align greeting on right with logout button >
+		<span><?php echo $greeting; ?></span>
+		<?php
+		if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+			echo("<a id='logoutButton' class='navButton' href='logout.php'>Logout</a>");
+		}
+		?>
 	</div>
 	<div id='home' class='content'>
 		<p>Welcome to Loudcloud Photo</p>
 	</div>
 </body>
-
-<?php
-session_start();
-if(array_key_exists("username",$_SESSION)){
-		echo "Welcome, $_SESSION[username]!\n";
-		//echo "Your login using" $_SESSION[password]
-}
-
-//define("ROOT_URL", "localhost");
-
-
-function connect($db,$user,$pass){
-
-}
-
-connect("postgres","postgres","password");
