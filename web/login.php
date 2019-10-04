@@ -73,11 +73,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <!todo change background>
     <style type="text/css">
-        body{ font: 14px sans-serif; }
+        body{ font: 14px sans-serif;
+              color: #0099cc; }
+        body, html{ height: 100%; }
+        .bg {
+  /* The image used */
+  background-image: url("images/jelly.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
         .wrapper{ width: 350px; padding: 20px; }
     </style>
 </head>
 <body>
+  <div class="bg">
     <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
@@ -98,5 +113,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
     </div>
+  </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-$params = parse_ini_file('../database.ini');
+$params = parse_ini_file ('../database.ini');
 if ($params === false) {
   throw new \Exception("Error reading database config file");
 }
