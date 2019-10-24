@@ -1,3 +1,2 @@
-URL for Heroku deployment: https://loudcloudphoto.herokuapp.com/
-
-Current background stolen from: https://weheartit.com/entry/72347547
+#React tutorial
+https://www.youtube.com/watch?v=Ke90Tje7VS0&t=904s
