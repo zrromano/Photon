@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Pagination from "./common/pagination";
 import ListGroup from "./common/listGroup";
 import MoviesTable from "./moviesTable";
+import queryString from "query-string";
 import { getMovies } from "../services/fakeMovieService";
 import { getGenres } from "../services/fakeGenreService";
 import { paginate } from "../utilities/paginate";
@@ -46,7 +47,9 @@ class Movies extends Component {
   };
 
   handleSort = sortColumn => {
-    this.setState({ sortColumn });
+    this.props.history.replace(
+      "/movies?sortBy=" + sortColumn.path + "&order=" + sortColumn.order
+    );
   };
 
   getPagedData = () => {
@@ -71,8 +74,13 @@ class Movies extends Component {
   render() {
     const { length: count } = this.state.movies;
     const { pageSize, currentPage, sortColumn } = this.state;
-
+    const { location } = this.props;
+    const { sortBy, order } = queryString.parse(location.search);
     if (count === 0) return <p>There are no movies in the database.</p>;
+    if (sortBy) {
+      sortColumn.path = sortBy;
+      if (order) sortColumn.order = order;
+    }
 
     const { totalCount, data } = this.getPagedData();
     return (
