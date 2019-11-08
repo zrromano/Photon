@@ -8,7 +8,7 @@ import NavBar from "./components/common/navbar";
 import NotFound from "./components/notFound";
 import Home from "./components/home";
 import MovieForm from "./components/movieForm";
-import Login from "./components/common/loginForm";
+import Login from "./components/loginForm";
 
 function App() {
   const links = [
@@ -18,18 +18,20 @@ function App() {
     { path: "/login", name: "Login" }
   ];
   return (
-    <main className="container" role="main">
+    <main className="container-fluid" role="main">
       <NavBar links={links} />
-      <Switch>
-        <Route path="/login" component={Login} />
-        <Route path="/movies/:id" component={MovieForm} />
-        <Route path="/movies" component={Movies} />
-        <Route path="/customers" component={Customers} />
-        <Route path="/rentals" component={Rentals} />
-        <Route path="/not-found" component={NotFound} />
-        <Route path="/" exact component={Home} />
-        <Redirect to="/not-found" />
-      </Switch>
+      <div style={{ padding: "60px 30px 30px 30px" }}>
+        <Switch>
+          <Route path="/login" component={Login} />
+          <Route path="/movies/:id" component={MovieForm} />
+          <Route path="/movies" component={Movies} />
+          <Route path="/customers" component={Customers} />
+          <Route path="/rentals" component={Rentals} />
+          <Route path="/not-found" component={NotFound} />
+          <Route path="/" exact component={Home} />
+          <Redirect to="/not-found" />
+        </Switch>
+      </div>
     </main>
   );
 }
