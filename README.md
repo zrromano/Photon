@@ -1,7 +1,7 @@
 ## Setting up environment
 Set up an Ubuntu 18.04 virtual machine.
 
-Run:
+# Run:
 
 sudo apt update && sudo apt upgrade
 
