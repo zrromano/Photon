@@ -1,7 +1,7 @@
-## Setting up environment
+# Setting up environment
 Set up an Ubuntu 18.04 virtual machine.
 
-# Run:
+## Run:
 
 sudo apt update && sudo apt upgrade
 
@@ -14,7 +14,7 @@ sudo apt install npm
 sudo apt install -y mongodb
 
 
-Install visual studio code and the following extensions:
+## Install visual studio code and the following extensions:
 
 Auto Import - ES6, TS, JSX, TSX
 
@@ -28,13 +28,13 @@ Prettier - Code formatter
   
  Simple React Snippets
 
-## React-application-template
+# React-application-template
 Haven't set up yet. Once vidly is complete, I'll copy it, delete vidly-specific components and code, and list common components and libraries used.
 
-## React tutorial
+# React tutorial
 https://www.youtube.com/watch?v=Ke90Tje7VS0&t=904s
 
-## React course
+# React course
 
 https://codewithmosh.com/courses/enrolled/357787
 
