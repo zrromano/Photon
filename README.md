@@ -7,6 +7,7 @@ sudo apt update && sudo apt upgrade
 sudo apt install git
 sudo apt install nodejs
 sudo apt install npm
+sudo apt install build-essential
 sudo apt install -y mongodb
 ```
 
