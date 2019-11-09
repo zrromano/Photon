@@ -9,6 +9,7 @@ import NotFound from "./components/notFound";
 import Home from "./components/home";
 import MovieForm from "./components/movieForm";
 import Login from "./components/loginForm";
+import RegisterForm from "./components/registerForm";
 
 function App() {
   const links = [
@@ -22,6 +23,7 @@ function App() {
       <NavBar links={links} />
       <div style={{ padding: "60px 30px 30px 30px" }}>
         <Switch>
+          <Route path="/register" component={RegisterForm} />
           <Route path="/login" component={Login} />
           <Route path="/movies/:id" component={MovieForm} />
           <Route path="/movies" component={Movies} />

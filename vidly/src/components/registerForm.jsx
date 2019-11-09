@@ -1,44 +1,41 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
 import Joi from "joi-browser";
 import Form from "./common/form";
 
-class LoginForm extends Form {
+class RegisterForm extends Form {
   state = {
-    data: { username: "", password: "" },
+    data: { fullName: "", username: "", password: "" },
     errors: {}
   };
 
   schema = {
+    fullName: Joi.string()
+      .required()
+      .label("Full Name"),
     username: Joi.string()
+      .alphanum()
+      .min(3)
+      .max(30)
       .required()
       .label("Username"),
     password: Joi.string()
+      .min(3)
       .required()
       .label("Password")
   };
 
-  doSubmit = () => {
-    //Call the server
-    console.log("Submitted");
-  };
+  doSubmit = () => {};
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <h1>Login</h1>
+        {this.renderInput("fullName", "Full Name", null, "text", 6)}
         {this.renderInput("username", "Username")}
         {this.renderInput("password", "Password", null, "password")}
-
-        {this.renderButton("Login")}
-        <Link to="/register">
-          <small className="form-text text-primary">
-            Don't have an account? Register here.
-          </small>
-        </Link>
+        {this.renderButton("Submit")}
       </form>
     );
   }
 }
 
-export default LoginForm;
+export default RegisterForm;
