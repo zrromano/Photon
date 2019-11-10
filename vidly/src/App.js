@@ -1,11 +1,13 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Movies from "./components/movies";
 import Customers from "./components/customers";
 import Rentals from "./components/rentals";
 import NavBar from "./components/common/navbar";
-import NotFound from "./components/notFound";
+import NotFound from "./components/common/notFound";
 import Home from "./components/home";
 import MovieForm from "./components/movieForm";
 import Login from "./components/loginForm";
@@ -22,6 +24,7 @@ function App() {
     <main className="container-fluid" role="main">
       <NavBar links={links} />
       <div style={{ padding: "60px 30px 30px 30px" }}>
+        <ToastContainer />
         <Switch>
           <Route path="/register" component={RegisterForm} />
           <Route path="/login" component={Login} />
