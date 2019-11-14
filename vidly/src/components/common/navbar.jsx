@@ -1,26 +1,42 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-const NavBar = ({ links }) => {
+const NavBar = ({ links, user }) => {
   return (
     <nav className="navbar fixed-top navbar-expand-sm bg-dark">
-      <Link to="/" className="navbar-brand" style={{ color: "lightgrey" }}>
+      <NavLink to="/" className="navbar-brand" style={{ color: "lightgrey" }}>
         Vidly
-      </Link>
+      </NavLink>
       <div className="collapse navbar-collapse">
-        <ul className="navbar-nav mr-auto">
+        <div className="navbar-nav mr-auto">
           {links.map(link => (
-            <li key={link.path} className="nav-item">
-              <Link
-                to={link.path}
-                className="nav-link"
-                style={{ color: "lightgrey" }}
-              >
-                {link.name}
-              </Link>
-            </li>
+            <NavLink
+              key={link.path}
+              className="nav-item nav-link"
+              to={link.path}
+              style={{ color: "lightgrey" }}
+            >
+              {link.name}
+            </NavLink>
           ))}
-        </ul>
+        </div>
+        <div className="nav navbar-nav ml-auto w-100 justify-content-end">
+          {!user && (
+            <NavLink className="nav-item nav-link" to="/login">
+              Login
+            </NavLink>
+          )}
+          {user && (
+            <React.Fragment>
+              <NavLink className="nav-item nav-link" to="/profile">
+                {user.name}
+              </NavLink>
+              <NavLink className="nav-item nav-link" to="/logout">
+                Logout
+              </NavLink>
+            </React.Fragment>
+          )}
+        </div>
       </div>
     </nav>
   );

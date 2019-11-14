@@ -9,6 +9,7 @@
     "fb-watchman": "^2.0.0",
     "font-awesome": "^4.7.0",
     "joi-browser": "^13.4.0",
+    "jwt-decode": "^2.2.0",
     "lodash": "^4.17.10",
     "prop-types": "^15.6.2",
     "query-string": "^6.1.0",
