@@ -22,7 +22,7 @@ sudo apt install -y mongodb
 ```
 
 # React-application-template
-**Reusable Components:**
+**Common Reusable Components:**
 ```
 form - Parent class for a form component
 input - Input field for a form. Rendered by form class
@@ -39,6 +39,12 @@ table - Renders a table with a header and rows of data
 tableBody - Body of table component
 tableHead - Head of table component
 ```
+**Default Page Components:**
+```
+home - Says 'Homepage'. Edit to whatever is needed.
+loginForm - Basic login page. Fields should be changed and added as needed for API.
+registerForm - Basic registration page. Fields should be changed and added as needed for API.
+```
 
 **Services:**
 ```
@@ -46,10 +52,11 @@ authService - Makes backend calls related to authentication (logging in and out)
 httpService - Handles unexpected errors and axios calls
 userService - Makes backend calls to register and modify user account data
 ```
+Note: Add fake services that return hard coded values if designing front-end before back.
 
 **Config.json:**
 ```
-apiUrl
+apiUrl - Base URL to use for API calls
 ```
 
 **Libraries:**
