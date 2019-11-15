@@ -62,18 +62,21 @@ sentryToken - When making a new project, create a project on Sentry.io and paste
 
 **Libraries:**
 ```
-@sentry/browser - Used for automated error logging with Sentry.io
-axios - Used to make http calls to backend services
-bootstrap - Formatting class library
-fb-watchman - Increases number of watchers available (ran into a problem of watchers overfilling)
-font-awesome - Font and icon library
-joi-browser - Used for validation of form inputs
-jwt-decode - Decodes Java Web Tokens to get user account information
-lodash - Functional library for working with arrays, numbers, objects, strings, etc.
-prop-types - Used to set requirements for props passed into a component
-query-string - Used for reading queries in URL
-react-router-dom - Set of routing components
-react-toastify - Alert functions to use instead of browser default
+@sentry/browser@5.7.1 - Used for automated error logging with Sentry.io
+axios@0.18.1 - Used to make http calls to backend services
+bootstrap@4.1.1 - Formatting class library
+fb-watchman@2.0.0 - Increases number of watchers available (ran into a problem of watchers overfilling)
+font-awesome@4.7.0 - Font and icon library
+joi-browser@13.4.0 - Used for validation of form inputs
+jwt-decode@2.2.0 - Decodes Java Web Tokens to get user account information
+lodash@4.17.10 - Functional library for working with arrays, numbers, objects, strings, etc.
+prop-types@15.6.2 - Used to set requirements for props passed into a component
+query-string@6.1.0 - Used for reading queries in URL
+react@16.11.0 - React
+react-dom@16.11.0 - React virtual DOM
+react-router-dom@4.3.1 - Set of routing components
+react-scripts@3.2.0
+react-toastify@5.4.0 - Alert functions to use instead of browser default
 ```
 
 # React course
