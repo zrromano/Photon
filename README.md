@@ -21,7 +21,7 @@ sudo apt install -y mongodb
 'Simple React Snippets'
 ```
 
-# React-application-template
+# react-app-template
 **Common Reusable Components:**
 ```
 form - Parent class for a form component
