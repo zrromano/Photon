@@ -54,6 +54,10 @@ userService - Makes backend calls to register and modify user account data
 ```
 Note: Add fake services that return hard coded values if designing front-end before back.
 
+**Utilities**
+```
+paginate - Paginate an array
+```
 **Config.json:**
 ```
 apiUrl - Base URL to use for API calls
