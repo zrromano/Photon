@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import "./index.css";
+import { sentryToken } from "./config.json";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import * as Sentry from "@sentry/browser";
+import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 
+Sentry.init({ dsn: sentryToken });
 ReactDOM.render(
   <BrowserRouter>
     <App />
