@@ -1,12 +1,23 @@
 {
-  "name": "react-app",
+  "name": "vidly",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sentry/browser": "^5.7.1",
+    "axios": "^0.18.1",
     "bootstrap": "^4.1.1",
+    "fb-watchman": "^2.0.0",
+    "font-awesome": "^4.7.0",
+    "joi-browser": "^13.4.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.10",
+    "prop-types": "^15.6.2",
+    "query-string": "^6.1.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "3.2.0",
+    "react-toastify": "^5.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
