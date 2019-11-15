@@ -11,6 +11,7 @@ import MovieForm from "./components/movieForm";
 import Login from "./components/loginForm";
 import RegisterForm from "./components/registerForm";
 import Logout from "./components/common/logout";
+import ProtectedRoute from "./components/common/protectedRoute";
 import auth from "./services/authService";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
@@ -24,6 +25,7 @@ class App extends Component {
   }
 
   render() {
+    const { user } = this.state;
     const links = [
       { path: "/movies", name: "Movies" },
       { path: "/customers", name: "Customers" },
@@ -31,15 +33,18 @@ class App extends Component {
     ];
     return (
       <main className="container-fluid" role="main">
-        <NavBar links={links} user={this.state.user} />
+        <NavBar links={links} user={user} />
         <div style={{ padding: "60px 30px 30px 30px" }}>
           <ToastContainer />
           <Switch>
             <Route path="/register" component={RegisterForm} />
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
-            <Route path="/movies/:id" component={MovieForm} />
-            <Route path="/movies" component={Movies} />
+            <ProtectedRoute path="/movies/:id" component={MovieForm} />
+            <Route
+              path="/movies"
+              render={props => <Movies {...props} user={user} />}
+            />
             <Route path="/customers" component={Customers} />
             <Route path="/rentals" component={Rentals} />
             <Route path="/not-found" component={NotFound} />
