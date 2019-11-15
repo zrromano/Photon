@@ -57,6 +57,7 @@ Note: Add fake services that return hard coded values if designing front-end bef
 **Config.json:**
 ```
 apiUrl - Base URL to use for API calls
+sentryToken - When making a new project, create a project on Sentry.io and paste the dsn from the setup instructions
 ```
 
 **Libraries:**
