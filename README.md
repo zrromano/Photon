@@ -21,7 +21,7 @@ sudo apt install -y mongodb
 'Simple React Snippets'
 ```
 
-# React-application-template
+# react-app-template
 **Common Reusable Components:**
 ```
 form - Parent class for a form component
@@ -54,6 +54,10 @@ userService - Makes backend calls to register and modify user account data
 ```
 Note: Add fake services that return hard coded values if designing front-end before back.
 
+**Utilities**
+```
+paginate - Paginate an array
+```
 **Config.json:**
 ```
 apiUrl - Base URL to use for API calls
