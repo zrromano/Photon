@@ -1,0 +1,17 @@
+{
+  "name": "loudapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^13.1.0",
+    "mongoose": "^2.9.10",
+    "underscore": "^1.8.3"
+  }
+}
