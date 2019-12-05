@@ -9,7 +9,8 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 
-Sentry.init({ dsn: sentryToken });
+if (sentryToken !== "") Sentry.init({ dsn: sentryToken });
+
 ReactDOM.render(
   <BrowserRouter>
     <App />
