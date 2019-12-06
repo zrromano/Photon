@@ -55,7 +55,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
   User.find()
     .then(users => {
-      res.send(users);
+      res.send(users.userName);
     })
     .catch(err => {
       res.status(500).send({
@@ -72,7 +72,7 @@ exports.findOne = (req, res) => {
           message: `User not found with id ${req.params.id}`
         });
       }
-      res.send(user);
+      res.send(user.userName);
     })
     .catch(err => {
       if (err.kind === "ObjectId") {
