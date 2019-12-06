@@ -1,17 +1,23 @@
 {
   "name": "loudapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for Loudcloud Photo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "zrromano",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "joi": "^13.1.0",
-    "mongoose": "^2.9.10",
-    "underscore": "^1.8.3"
+    "joi": "^14.3.1",
+    "mongoose": "^5.7.13"
   }
 }
