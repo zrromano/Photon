@@ -1,17 +1,15 @@
+const auth = require('../middleware/auth.middleware');
+
 module.exports = app => {
   const pictures = require("../controllers/picture.controller.js");
 
-  app.get("/pictures", pictures.findAll);
+  app.get("/api/pictures", pictures.list);
 
-  app.post("/pictures", pictures.create);
+  app.post("/api/pictures", auth, pictures.create);
 
-  app.get("/pictures/:user", pictures.findUser);
+  app.get("/api/pictures/:title", pictures.find);
 
-  app.get("/pictures/:category", pictures.findCategory);
+  app.put("/api/pictures/:title", auth, pictures.update);
 
-  app.get("/pictures/:id", pictures.findOne);
-
-  app.put("/pictures/:id", pictures.update);
-
-  app.delete("/pictures/:id", pictures.delete);
+  app.delete("/api/pictures/:title", auth, pictures.delete);
 };

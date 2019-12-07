@@ -8,19 +8,18 @@ export function register(user) {
   return http.post(apiEndpoint, {
     firstName: user.firstName,
     lastName: user.lastName,
-    userName: user.userName,
+    username: user.username,
     password: user.password,
     email: user.email
   });
 }
 
 export function update(user) {
-  const currentUser = auth.getCurrentUser();
-  return http.put(`${apiEndpoint}/${currentUser._id}`, user);
+  return http.put(`${apiEndpoint}/me`, user);
 }
 
-export function deleteCurrentUser(){
-  const currentUser = auth.getCurrentUser();
-  http.delete(`${apiEndpoint}/${currentUser._id}`);
+export function deleteCurrentUser() {
+  const response = http.delete(`${apiEndpoint}/me`);
   auth.logout();
+  return response;
 }

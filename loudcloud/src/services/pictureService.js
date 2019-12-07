@@ -4,23 +4,15 @@ import { apiUrl } from "../config.json";
 const apiEndpoint = apiUrl + "/pictures";
 
 export function getPictures() {
-  return null;
+  return http.get(apiEndpoint);
 }
 
-export function getUserPictures(user) {
-  return null;
-}
-
-export function getPicturesByCategory(category) {
-  return null;
-}
-
-export function getPictureById(id) {
-  return null;
+export function getPictureByTitle(title) {
+  return http.get(`${apiEndpoint}/${title}`);
 }
 
 export function addPicture(picture) {
-  return null;
+  
 }
 
 export function updatePicture(picture) {

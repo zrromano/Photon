@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import Joi from "joi-browser";
 import Form from "./common/form";
 import * as userService from "../services/userService";
@@ -6,23 +7,40 @@ import auth from "../services/authService";
 
 class RegisterForm extends Form {
   state = {
-    data: { name: "", email: "", password: "" },
+    data: {
+      firstName: "",
+      lastName: "",
+      username: "",
+      password: "",
+      email: ""
+    },
     errors: {}
   };
 
   schema = {
-    name: Joi.string()
+    firstName: Joi.string()
+      .max(25)
       .required()
-      .label("Display Name"),
+      .label("First Name"),
+    lastName: Joi.string()
+      .max(25)
+      .required()
+      .label("Last Name"),
+    username: Joi.string()
+      .min(3)
+      .max(15)
+      .required()
+      .label("Username"),
+    password: Joi.string()
+      .min(5)
+      .max(255)
+      .required()
+      .label("Password"),
     email: Joi.string()
       .min(5)
-      .max(30)
+      .max(255)
       .required()
-      .label("Email"),
-    password: Joi.string()
-      .min(3)
-      .required()
-      .label("Password")
+      .label("Email")
   };
 
   doSubmit = async () => {
@@ -34,7 +52,10 @@ class RegisterForm extends Form {
       if (ex.response && ex.response.status === 400) {
         console.log(ex);
         const errors = { ...this.state.errors };
-        errors.email = ex.response.data;
+        if(ex.response.data === "Username is already taken.")
+          errors.username = ex.response.data;
+        else
+          errors.email = ex.response.data;
         this.setState({ errors });
       }
     }
@@ -43,6 +64,10 @@ class RegisterForm extends Form {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
+        {this.renderInput("firstName", "First Name")}
+        {this.renderInput("lastName", "Last Name")}
+        {this.renderInput("username", "Username")}
+        {this.renderInput("password", "Password", "password")}
         {this.renderInput(
           "email",
           "E-mail Address",
@@ -50,9 +75,12 @@ class RegisterForm extends Form {
           "We won't share your e-mail with anyone",
           6
         )}
-        {this.renderInput("password", "Password", "password")}
-        {this.renderInput("name", "Display Name")}
         {this.renderButton("Register")}
+        <Link to="/login">
+          <small className="form-text text-primary">
+            Already have an account? Login here.
+          </small>
+        </Link>
       </form>
     );
   }

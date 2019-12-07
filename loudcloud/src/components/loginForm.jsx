@@ -6,14 +6,14 @@ import auth from "../services/authService";
 
 class LoginForm extends Form {
   state = {
-    data: { email: "", password: "" },
+    data: { username: "", password: "" },
     errors: {}
   };
 
   schema = {
-    email: Joi.string()
+    username: Joi.string()
       .required()
-      .label("E-mail Address"),
+      .label("Username"),
     password: Joi.string()
       .required()
       .label("Password")
@@ -22,7 +22,7 @@ class LoginForm extends Form {
   doSubmit = async () => {
     try {
       const { data } = this.state;
-      await auth.login(data.email, data.password);
+      await auth.login(data.username, data.password);
 
       const { state } = this.props.location;
       window.location = state ? state.from.pathname : "/";
@@ -41,7 +41,7 @@ class LoginForm extends Form {
     return (
       <form onSubmit={this.handleSubmit}>
         <h1>Login</h1>
-        {this.renderInput("email", "E-mail Address")}
+        {this.renderInput("username", "Username")}
         {this.renderInput("password", "Password", "password")}
 
         {this.renderButton("Login")}
