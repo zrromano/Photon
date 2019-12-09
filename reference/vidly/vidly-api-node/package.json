@@ -21,14 +21,14 @@
     "joi": "^13.4.0",
     "joi-objectid": "^2.0.0",
     "jsonwebtoken": "^8.1.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.15",
     "moment": "^2.20.1",
-    "mongoose": "^5.0.2",
+    "mongoose": "^5.7.14",
     "winston": "^2.4.0",
-    "winston-mongodb": "^3.0.0"
+    "winston-mongodb": "^5.0.1"
   },
   "devDependencies": {
-    "jest": "^22.2.2",
+    "jest": "^25.0.0",
     "supertest": "^3.0.0"
   }
 }

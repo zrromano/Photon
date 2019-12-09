@@ -1,8 +1,17 @@
 import React from "react";
+import Background from '../jelly.jpg'
+var sectionStyle = {
+  backgroundImage: "url(" + { Background } + ")",
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+};
 
 const Home = () => {
   return (
     <div>
+    <section style={sectionStyle }>
+    </section>
       <h1>Welcome to Loudcloud Photo</h1>
       <p>
         Loudcloud Photo is a photo hosting site developed by Zachary Romano and

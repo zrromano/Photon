@@ -7,6 +7,9 @@ const NavBar = ({ links, user }) => {
       <NavLink to="/" className="navbar-brand" style={{ color: "lightgrey" }}>
         Logo
       </NavLink>
+      <NavLink to="/explore" className="navbar-brand" style={{ color: "lightblue"}}>
+        Explore
+      </NavLink>
       <div className="collapse navbar-collapse">
         <div className="navbar-nav mr-auto">
           {links.map(link => (
@@ -30,6 +33,9 @@ const NavBar = ({ links, user }) => {
             <React.Fragment>
               <NavLink className="nav-item nav-link" to="/profile">
                 {user.username}
+              </NavLink>
+              <NavLink className="nav-item nav-link" to="/profile/account-settings">
+                Account
               </NavLink>
               <NavLink className="nav-item nav-link" to="/logout">
                 Logout

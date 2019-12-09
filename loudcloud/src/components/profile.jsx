@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SearchBox from "./common/searchBox";
 import ListGroup from "./common/listGroup";
-
+import AccountSettings from "./accountSettings"
 class Profile extends Component {
   state = {
     searchQuery: "",
@@ -29,7 +29,10 @@ class Profile extends Component {
         </div>
         <div className="col"></div>
         <SearchBox value={searchQuery} onChange={this.handleSearch} />
+        <accountsettings> 
+        </accountsettings>
       </div>
+
     );
   }
 }
