@@ -6,7 +6,7 @@ class AccountSettings extends Component {
   state = {};
   render() {
     return(
-    <AccountForm onSubmit={this.doSubmit}/>
+    <AccountForm />
 );
   }
 

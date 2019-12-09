@@ -37,7 +37,7 @@ doSubmit = async () => {
 };
 
 render() {
-  if (authUser.getCurrentUser()) return <Redirect to="/profile/account-settings" />;
+  
   return (
     <form onSubmit={this.handleSubmit}>
     <h1>Account Settings</h1>
