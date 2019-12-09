@@ -7,7 +7,7 @@ const NavBar = ({ links, user }) => {
       <NavLink to="/" className="navbar-brand" style={{ color: "lightgrey" }}>
         Logo
       </NavLink>
-      <NavLink to="/explore" className="navbar-brand" style={{ color: "lightblue"}}>
+      <NavLink to="/pictures" className="navbar-brand" style={{ color: "lightblue"}}>
         Explore
       </NavLink>
       <div className="collapse navbar-collapse">

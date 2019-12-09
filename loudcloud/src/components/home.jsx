@@ -1,7 +1,7 @@
 import React from "react";
 import Background from '../jelly.jpg'
 var sectionStyle = {
-  backgroundImage: "url(" + { Background } + ")",
+  backgroundImage: "url(" + '../jelly.jpg' + ")",
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat'
