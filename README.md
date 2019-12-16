@@ -11,6 +11,12 @@ sudo apt install build-essential
 sudo apt install -y mongodb
 ```
 
+**Install:**
+```
+Postman
+MongoDB Compass
+```
+
 **Install visual studio code and the following extensions:**
 ```
 'Auto Import - ES6, TS, JSX, TSX'
