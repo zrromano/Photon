@@ -1,5 +1,7 @@
 import React from "react";
 import Background from '../jelly.jpg'
+import ImageUploadForm from './imageUploadForm';
+
 var sectionStyle = {
   backgroundImage: `url(${Background})`,
   backgroundPosition: 'center',
@@ -22,6 +24,7 @@ const Home = () => {
         Github repo{" "}
         <a href="https://github.com/elruizz/loudcloud">right here</a>.
       </p>
+      <ImageUploadForm/>
     </div>
   );
 };

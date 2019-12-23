@@ -11,8 +11,12 @@ export function getPictureByTitle(title) {
   return http.get(`${apiEndpoint}/${title}`);
 }
 
-export function addPicture(picture) {
-  
+export function addPictures(pictures) {
+  fetch(apiEndpoint, { method: "POST", body: pictures })
+    .then(res => res.json())
+    .then(images => {
+      return images;
+    });
 }
 
 export function updatePicture(picture) {
