@@ -11,6 +11,12 @@ sudo apt install build-essential
 sudo apt install -y mongodb
 ```
 
+**Install:**
+```
+Postman
+MongoDB Compass
+```
+
 **Install visual studio code and the following extensions:**
 ```
 'Auto Import - ES6, TS, JSX, TSX'
@@ -21,6 +27,7 @@ sudo apt install -y mongodb
 'Simple React Snippets'
 ```
 
+Clone Git repository, navigate to loudapi and loudcloud in terminal and run 'npm i' in each.
 # react-app-template
 **Common Reusable Components:**
 ```
