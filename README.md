@@ -26,8 +26,8 @@ MongoDB Compass
 'Ayu' (I use the Ayu Dark color scheme; not neccessary)
 'GitLens - Git supercharged'
 'Prettier - Code formatter'
-    * Make sure format on save is turned on in VScode settings and set default formatter to:
-          esbenp.prettier-vscode
+    * Make sure format on save is turned on in VScode settings and set 
+      default formatter to esbenp.prettier-vscode
 'Simple React Snippets'
 ```
 
