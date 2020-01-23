@@ -9,6 +9,7 @@ sudo apt install nodejs
 sudo apt install npm
 sudo apt install build-essential
 sudo apt install -y mongodb
+npm i -g nodemon
 ```
 
 **Install:**
@@ -28,6 +29,16 @@ MongoDB Compass
 ```
 
 Clone Git repository, navigate to loudapi and loudcloud in terminal and run `npm i` in each.
+
+**To start project:**
+Navigate to loudapi and run:
+```
+export PORT=3100
+export loudcloud_jwtPrivateKey=secureKey
+nodemon server.js
+```
+In a seperate terminal navigate to loudcloud and run `npm start`
+
 # react-app-template
 **Common Reusable Components:**
 ```
