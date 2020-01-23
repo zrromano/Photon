@@ -30,7 +30,7 @@ mongoose
   });
 
 app.get("/api", (req, res) => {
-  res.json({ message: "Welcome to the API backend for Loudcloud Photo." });
+  res.json({ message: "Welcome to the API backend for Photon Photo Hosting." });
 });
 
 require("./routes/auth.routes.js")(app);

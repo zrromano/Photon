@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Pagination from "./common/pagination";
 import SearchBox from "./common/searchBox";
 import PicturesTable from "./picturesTable";
 import queryString from "query-string";
-import { toast } from "react-toastify";
 import { getPictures } from "../services/pictureService";
 import { paginate } from "../utilities/paginate";
 import _ from "lodash";
@@ -34,7 +32,6 @@ class Pictures extends Component {
   handlePageChange = page => {
     this.setState({ currentPage: page });
   };
-
 
   handleSort = sortColumn => {
     this.props.history.replace(
@@ -70,7 +67,7 @@ class Pictures extends Component {
   render() {
     const { length: count } = this.state.pictures;
     const { pageSize, currentPage, sortColumn, searchQuery } = this.state;
-    const { location, user } = this.props;
+    const { location } = this.props;
     const { sortBy, order } = queryString.parse(location.search);
     if (count === 0) return <p>There are no pictures in the database.</p>;
     if (sortBy) {
