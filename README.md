@@ -1,4 +1,4 @@
-# Setting up environment
+## Setting up environment
 Set up an Ubuntu 18.04 virtual machine.
 
 **Run:**
