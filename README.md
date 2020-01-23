@@ -36,6 +36,7 @@ MongoDB Compass
 **To start project:**
 
 Clone Git repository, navigate to loudapi and loudcloud in terminal and run `npm i` in each.
+
 Navigate to loudapi and run:
 ```
 export PORT=3100
