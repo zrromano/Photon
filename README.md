@@ -76,7 +76,7 @@ authService - Makes backend calls related to authentication (logging in and out)
 httpService - Handles unexpected errors and axios calls
 userService - Makes backend calls to register and modify user account data
 ```
-Note: Add fake services that return hard coded values if designing front-end before back.
+*Note* Add fake services that return hard coded values if designing front-end before back.
 
 **Utilities**
 ```
