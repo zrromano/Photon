@@ -107,5 +107,5 @@ react-toastify@5.4.0 - Alert functions to use instead of browser default
 ## React course used to build template
 https://codewithmosh.com/courses/enrolled/357787
 
-## Etc
-https://www.mongodb.com/cloud/atlas this is ass
+## Other useful links
+https://www.mongodb.com/cloud/atlas
