@@ -27,7 +27,7 @@ MongoDB Compass
 'Simple React Snippets'
 ```
 
-Clone Git repository, navigate to loudapi and loudcloud in terminal and run 'npm i' in each.
+Clone Git repository, navigate to loudapi and loudcloud in terminal and run `npm i` in each.
 # react-app-template
 **Common Reusable Components:**
 ```
