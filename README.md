@@ -1,3 +1,5 @@
+# Loudcloud Photo
+
 ## Setting up environment
 Set up an Ubuntu 18.04 virtual machine.
 
@@ -39,7 +41,7 @@ nodemon server.js
 ```
 In a seperate terminal navigate to loudcloud and run `npm start`
 
-# react-app-template
+## react-app-template
 **Common Reusable Components:**
 ```
 form - Parent class for a form component
@@ -101,8 +103,8 @@ react-scripts@3.2.0
 react-toastify@5.4.0 - Alert functions to use instead of browser default
 ```
 
-# React course
+## React course used to build template
 https://codewithmosh.com/courses/enrolled/357787
 
-# Etc
+## Etc
 https://www.mongodb.com/cloud/atlas this is ass
