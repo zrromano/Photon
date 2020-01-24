@@ -113,4 +113,6 @@ react-toastify@5.4.0 - Alert functions to use instead of browser default
 https://codewithmosh.com/courses/enrolled/357787
 
 ## Other useful links
-https://www.mongodb.com/cloud/atlas
+MongoDB database hosting   https://www.mongodb.com/cloud/atlas
+Bootstrap documentation    https://getbootstrap.com/docs/4.1/getting-started/introduction/
+JOI documentation          https://hapi.dev/family/joi/
