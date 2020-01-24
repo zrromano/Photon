@@ -40,7 +40,7 @@ Clone Git repository, navigate to photonapi and photon in terminal and run `npm 
 Navigate to photonapi and run:
 ```
 export PORT=3100
-export phton_jwtPrivateKey=secureKey
+export photon_jwtPrivateKey=secureKey
 nodemon server.js
 ```
 In a seperate terminal navigate to photon and run `npm start`
