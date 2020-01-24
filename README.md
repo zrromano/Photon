@@ -115,6 +115,10 @@ https://codewithmosh.com/courses/enrolled/357787
 ## Other useful links
 MongoDB database hosting   https://www.mongodb.com/cloud/atlas
 
+React documentation        https://reactjs.org/docs/getting-started.html
+
 Bootstrap documentation    https://getbootstrap.com/docs/4.1/getting-started/introduction/
 
 JOI documentation          https://hapi.dev/family/joi/
+
+Font Awesome documentation https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
