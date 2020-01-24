@@ -5,7 +5,7 @@
 ## Setting up environment
 Set up an Ubuntu 18.04 virtual machine.
 
-**Run:**
+**Run in terminal:**
  ```
 sudo apt update && sudo apt upgrade
 sudo apt install git
@@ -13,7 +13,7 @@ sudo apt install nodejs
 sudo apt install npm
 sudo apt install build-essential
 sudo apt install -y mongodb
-npm i -g nodemon
+sudo npm i -g nodemon
 ```
 
 **Install:**
@@ -83,9 +83,9 @@ userService - Makes backend calls to register and modify user account data
 ```
 **Note** Add fake services that return hard coded values if designing front-end before back.
 
-**Utilities**
+**Utilities:**
 ```
-paginate - Paginate an array
+paginate - Splits a list of items by page number and page size
 ```
 **Config.json:**
 ```
