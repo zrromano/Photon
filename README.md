@@ -35,9 +35,7 @@ MongoDB Compass
 
 **To start project:**
 
-Clone Git repository, navigate to photonapi and photon in terminal and run `npm i` in each.
-
-First step only needs to be done once.
+Clone Git repository, navigate to photonapi and photon in terminal and run `npm i` in each. This step only needs to be done once.
 
 Navigate to photonapi and run:
 ```
