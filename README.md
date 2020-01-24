@@ -48,6 +48,9 @@ In a seperate terminal navigate to photon and run `npm start`
 **Note** if you get an error that says ENOSPC when starting, try running `npm empty cache`
 
 ## react-app-template
+
+Located in 'reference' folder.
+
 **Common Reusable Components:**
 ```
 form - Parent class for a form component
