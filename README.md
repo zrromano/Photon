@@ -22,7 +22,7 @@ Postman
 MongoDB Compass
 ```
 
-**Install visual studio code and the following extensions:**
+**Install Visual Studio Code and the following extensions:**
 ```
 'Auto Import - ES6, TS, JSX, TSX'
 'Ayu' (I use the Ayu Dark color scheme; not neccessary)
