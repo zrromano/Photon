@@ -1,6 +1,6 @@
 # Photon
 
-**Note** original project name was Loudcloud Photo. I tried to update everything, but some names may need to be changed. Loudcloud was Ethan's brother's internet handle and he changed the name before transferring the repo to me.
+**Note** original project name was Loudcloud Photo. I tried to update everything, but some names may need to be changed. Loudcloud is Ethan's brother's internet handle and he changed the name before transferring the repo to me.
 
 ## Setting up environment
 Set up an Ubuntu 18.04 virtual machine.
