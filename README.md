@@ -35,7 +35,7 @@ MongoDB Compass
 
 **To start project:**
 
-Clone Git repository, navigate to loudapi and loudcloud in terminal and run `npm i` in each.
+Clone Git repository, navigate to photonapi and photon in terminal and run `npm i` in each.
 
 Navigate to loudapi and run:
 ```
@@ -43,7 +43,9 @@ export PORT=3100
 export loudcloud_jwtPrivateKey=secureKey
 nodemon server.js
 ```
-In a seperate terminal navigate to loudcloud and run `npm start`
+In a seperate terminal navigate to photon and run `npm start`
+
+**Note** if you get an error that says ENOSPC when starting, try running `npm empty cache`
 
 ## react-app-template
 **Common Reusable Components:**
