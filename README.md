@@ -1,11 +1,11 @@
 # Photon
 
-**Note** original project name was Loudcloud Photo, some names need to be changed. Loudcloud was Ethan's brother's internet handle and he changed the name before transferring the repo to me.
+**Note** original project name was Loudcloud Photo. I tried to update everything, but some names may need to be changed. Loudcloud is Ethan's brother's internet handle and he changed the name before transferring the repo to me.
 
 ## Setting up environment
 Set up an Ubuntu 18.04 virtual machine.
 
-**Run:**
+**Run in terminal:**
  ```
 sudo apt update && sudo apt upgrade
 sudo apt install git
@@ -13,7 +13,7 @@ sudo apt install nodejs
 sudo apt install npm
 sudo apt install build-essential
 sudo apt install -y mongodb
-npm i -g nodemon
+sudo npm i -g nodemon
 ```
 
 **Install:**
@@ -22,7 +22,7 @@ Postman
 MongoDB Compass
 ```
 
-**Install visual studio code and the following extensions:**
+**Install Visual Studio Code and the following extensions:**
 ```
 'Auto Import - ES6, TS, JSX, TSX'
 'Ayu' (I use the Ayu Dark color scheme; not neccessary)
@@ -35,17 +35,22 @@ MongoDB Compass
 
 **To start project:**
 
-Clone Git repository, navigate to loudapi and loudcloud in terminal and run `npm i` in each.
+Clone Git repository, navigate to photonapi and photon in terminal and run `npm i` in each. This step only needs to be done once.
 
-Navigate to loudapi and run:
+Navigate to photonapi and run:
 ```
 export PORT=3100
-export loudcloud_jwtPrivateKey=secureKey
+export photon_jwtPrivateKey=secureKey
 nodemon server.js
 ```
-In a seperate terminal navigate to loudcloud and run `npm start`
+In a seperate terminal navigate to photon and run `npm start`
+
+**Note** if you get an error that says ENOSPC when starting, try running `npm empty cache`
 
 ## react-app-template
+
+Located in 'reference' folder.
+
 **Common Reusable Components:**
 ```
 form - Parent class for a form component
@@ -76,11 +81,11 @@ authService - Makes backend calls related to authentication (logging in and out)
 httpService - Handles unexpected errors and axios calls
 userService - Makes backend calls to register and modify user account data
 ```
-Note: Add fake services that return hard coded values if designing front-end before back.
+**Note** Add fake services that return hard coded values if designing front-end before back.
 
-**Utilities**
+**Utilities:**
 ```
-paginate - Paginate an array
+paginate - Splits a list of items by page number and page size
 ```
 **Config.json:**
 ```
@@ -111,4 +116,12 @@ react-toastify@5.4.0 - Alert functions to use instead of browser default
 https://codewithmosh.com/courses/enrolled/357787
 
 ## Other useful links
-https://www.mongodb.com/cloud/atlas
+MongoDB database hosting   https://www.mongodb.com/cloud/atlas
+
+React documentation        https://reactjs.org/docs/getting-started.html
+
+Bootstrap documentation    https://getbootstrap.com/docs/4.1/getting-started/introduction/
+
+JOI documentation          https://hapi.dev/family/joi/
+
+Font Awesome documentation https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
