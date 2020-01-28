@@ -5,7 +5,7 @@ const NavBar = ({ links, user }) => {
   return (
     <nav className="navbar fixed-top navbar-expand-sm bg-dark">
       <NavLink to="/" className="navbar-brand" style={{ color: "lightgrey" }}>
-        Vidly
+        Logo
       </NavLink>
       <div className="collapse navbar-collapse">
         <div className="navbar-nav mr-auto">

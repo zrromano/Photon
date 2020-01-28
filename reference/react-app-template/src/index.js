@@ -7,7 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 import * as Sentry from "@sentry/browser";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
-import "font-awesome/css/font-awesome.css";
+import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 Sentry.init({ dsn: sentryToken });
 ReactDOM.render(
