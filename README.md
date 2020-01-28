@@ -1,5 +1,13 @@
 # Photon
 
+## Developers:
+
+Zachary Romano - Web Page Design III & Advanced Programming: Javascript
+
+Ethan Ruiz - Web Page Design III
+
+Matthew Frankmore - Advanced Programming: Javascript
+
 **Note** original project name was Loudcloud Photo. I tried to update everything, but some names may need to be changed. Loudcloud is Ethan's brother's internet handle and he changed the name before transferring the repo to me.
 
 ## Setting up environment
