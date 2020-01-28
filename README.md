@@ -53,7 +53,10 @@ nodemon server.js
 ```
 In a seperate terminal navigate to photon and run `npm start`
 
-**Note** if you get an error that says ENOSPC when starting, try running `npm empty cache`
+**Note** if you get an error that says ENOSPC when starting, try running:
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
 
 ## react-app-template
 
